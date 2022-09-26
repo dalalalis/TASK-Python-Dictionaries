@@ -1,12 +1,16 @@
 # Create a dictionary called `person`, it has three properties, `name` which is a string, `age` which is an integer, `hobbies` which is a list of strings.
-
+person ={
+    "name":"dalal",
+    "age":30,
+    "hobbies":["skiing", "tennis", "swimming", "coding"],}
 
 # Create a function called `change_age` which takes the `person` dictionary and a `number` as arguments, this function changes the age in the dictionary to the `number`. The return value of this function is the updated dictionary.
+#can i write this ?def change_age (person, person['age']):
 
 
 def change_age(person, number):
-    ...
-
+    person["age"]= number
+    return person
 
 print(change_age(person, 21))
 
@@ -15,8 +19,10 @@ print(change_age(person, 21))
 
 
 def add_hobby(person, hobby):
-    ...
-
+    extra_hobby= person["hobbies"]
+    extra_hobby.append(hobby)
+    return add_hobby
+# can also be written person["hobbies"].append (hobby)
 
 print(add_hobby(person, "Table Tennis"))
 
@@ -27,7 +33,8 @@ print(add_hobby(person, "Table Tennis"))
 
 
 def add_job(person, job):
-    ...
+    if person["job"] in person:
+
 
 
 # 2. Create a function called `check_hobbies`, which takes a person dictionary as an argument. This function checks the number of hobbies for this person, if it's more than three hobbies, print to the user a message telling them that they're talented.
