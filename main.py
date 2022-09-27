@@ -46,5 +46,6 @@ def add_job(person, job):
 
 
 def check_hobbies(person):
-    if len(person["hobbies]") >3
+    x=len(person["hobbies"])
+    if x >3:
         retun("you are talented")
