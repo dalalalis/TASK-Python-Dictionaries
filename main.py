@@ -2,7 +2,7 @@
 person ={
     "name":"dalal",
     "age":30,
-    "hobbies":["skiing", "tennis", "swimming", "coding"],}
+    "hobbies":["skiing", "tennis", "swimming", "coding"]}
 
 # Create a function called `change_age` which takes the `person` dictionary and a `number` as arguments, this function changes the age in the dictionary to the `number`. The return value of this function is the updated dictionary.
 #can i write this ?def change_age (person, person['age']):
