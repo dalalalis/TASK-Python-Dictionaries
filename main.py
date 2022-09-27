@@ -34,6 +34,11 @@ print(add_hobby(person, "Table Tennis"))
 
 def add_job(person, job):
     if person["job"] in person:
+        return person
+    else:
+         person["job"]= job
+    return person
+        
 
 
 
@@ -41,4 +46,5 @@ def add_job(person, job):
 
 
 def check_hobbies(person):
-    ...
+    if len(person["hobbies]") >3
+        retun("you are talented")
